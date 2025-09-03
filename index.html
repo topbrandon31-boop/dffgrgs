@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>[ACCESO JOCOP KATY - NIVEL 4]</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #0f0;
+      padding: 20px;
+      margin: 0;
+      background-image: radial-gradient(#0f03 1px, #000 1px);
+      background-size: 20px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      border: 1px solid #0f0;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #000;
+      box-shadow: 0 0 20px #0f05;
+    }
+    h1 {
+      text-align: center;
+      color: #0f0;
+      text-shadow: 0 0 10px #0f0;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #0f9;
+      margin-bottom: 20px;
+    }
+    .log {
+      background-color: #111;
+      border: 1px solid #0f0;
+      padding: 15px;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
+      font-size: 13px;
+      height: 180px;
+      overflow-y: auto;
+      border-radius: 4px;
+    }
+    .section {
+      margin-bottom: 20px;
+      border-bottom: 1px dashed #0f0;
+      padding-bottom: 15px;
+    }
+    .field {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .field label {
+      display: inline-block;
+      width: 180px;
+      color: #0f9;
+    }
+    .value {
+      color: #fff;
+    }
+    .btn {
+      background-color: #f00;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    .btn:hover {
+      background-color: #f33;
+    }
+    .btn-green {
+      background-color: #0f0;
+    }
+    .btn-green:hover {
+      background-color: #0c0;
+    }
+    .alert {
+      color: #ff0;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .hidden {
+      color: #333;
+      filter: blur(4px);
+    }
+    .visible {
+      color: #fff;
+      filter: none;
+    }
+    .media img {
+      max-width: 300px;
+      border: 1px solid #0f0;
+      margin-top: 10px;
+    }
+    .disclaimer {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-top: 30px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body onload="iniciarSistema()">
+
+  <div class="container">
+    <h1>[ACCESO TOTAL - JOCOP KATY]</h1>
+    <div class="subtitle">Usuario: JOCOP_KATY | Nivel de Acceso: 4 (Completo)</div>
+
+    <div class="log" id="terminal">
+Iniciando lectura del dispositivo JOCOP KATY (Facebook)...
+Buscando señal en /dev/ttyJOCOP0...
+    </div>
+
+    <div class="section">
+      <div class="field"><strong>Datos procesados:</strong></div>
+      <div class="field"><label>CUENTA FALSA</label><span class="value">JOCOP_KATY</span></div>
+      <div class="field"><label>NOMBRE REAL:</label> <span class="value">Jose Ramirez Lopez</span></div>
+      <div class="field"><label>EDAD:</label> <span class="value">29</span></div>
+      <div class="field"><label>LOCALIZACION:</label> <span class="value">Guadalajara, Jalisco, MX</span></div>
+      <div class="field"><label>OCUPACION:</label> <span class="value">Ninguna</span></div>
+      <div class="field"><label>DESCRIPCION:</label> <span class="value">Perfil activo en redes. Alta interacción con contenido ambiental y tecnología.</span></div>
+    </div>
+
+
+    <div class="section">
+      <div class="field"><label>Facebook:</label> <span id="pass-fb" class="hidden">JOCOP_KATY</span> <button class="btn" onclick="mostrar('pass-fb')">Mostrar</button></div>
+      <div class="field"><label>Instagram:</label> <span id="pass-ig" class="hidden">jose.lp.67</span> <button class="btn" onclick="mostrar('pass-ig')">Mostrar</button></div>
+      <div class="field"><label>Gmail:</label> <span id="pass-gmail" class="hidden">jose.r.lopez@gmail.com</span> <button class="btn" onclick="mostrar('pass-gmail')">Mostrar</button></div>
+    </div>
+
+    <!-- Cuenta Bancaria Ficticia -->
+    <div class="section">
+      <div class="field"><strong>🏦 CUENTA BANCARIA:</strong></div>
+      <div class="field"><label>Banco:</label> <span class="value">Banco Nacional</span></div>
+      <div class="field"><label>N° Cuenta:</label> <span class="value">BF-7890-1234-5678-9012</span></div>
+      <div class="field"><label>CLABE:</label> <span class="value">000123456789012345</span></div>
+      <div class="field"><label>Saldo:</label> <span class="value">$4,720 MXN</span></div>
+      <div class="field"><label>Tarjeta:</label> <span class="value">**** **** **** 2024 (Vence: 12/27)</span></div>
+    </div>
+
+    <!-- Aplicaciones Descargadas -->
+    <div class="section">
+      <div class="field"><strong>📱 APLICACIONES DESCARGADAS:</strong></div>
+      <div class="field">
+        <span class="value">
+          Facebook | Instagram | TikTok | WhatsApp | Snapchat | 
+          Spotify | Free Fire | Aplicaciones Predeterminadas | Uber | Mercado Libre | 
+          Google Drive | Telegram | Signal | MyFitnessPal | Weather Pro
+        </span>
+      </div>
+    </div>
+
+    <!-- Multimedia -->
+    <div class="section">
+      <div class="field"><strong>🖼️ MULTIMEDIA RECIENTE:</strong></div>
+      <div id="multimedia-output">
+        (Cargando contenido...)
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="controls">
+      <button class="btn" onclick="reiniciarSistema()">Reiniciar Sistema</button>
+    </div>
+
+  <script>
+    function log(texto) {
+      const terminal = document.getElementById('terminal');
+      terminal.textContent += texto + '\n';
+      terminal.scrollTop = terminal.scrollHeight;
+    }
+
+    function iniciarSistema() {
+      setTimeout(() => {
+        log("Conexión establecida con JOCOP KATY. Esperando datos...");
+      }, 1000);
+
+      setTimeout(() => {
+        const ts = Math.floor(Date.now() / 1000);
+        log(`[${ts}] Datos recibidos: JOCOP_KATY|TEMP:25.1|HUM:56|AIRQ:38|STATUS:OK|END`);
+        log("Procesando perfil de usuario...");
+        setTimeout(() => {
+          log("Acceso al dispositivo: [CONCEDIDO]");
+          log("Descargando historial de  cuentas contraseñas apps y multimedia...");
+          setTimeout(() => {
+            mostrarMultimedia();
+          }, 800);
+        }, 1200);
+      }, 2500);
+    }
+
+    function mostrar(id) {
+      const elem = document.getElementById(id);
+      if (elem.className === "hidden") {
+        elem.className = "visible";
+      } else {
+        elem.className = "hidden";
+      }
+    }
+
+    function mostrarMultimedia() {
+      const output = document.getElementById('multimedia-output');
+      const img = "https://source.unsplash.com/random/600x400/?selfie,woman,portrait";
+      output.innerHTML = `
+        <img src="${img}" alt="Fotos de Galeria">
+        <small>No disponible por el momento(nivel 3 acceso) . </small>
+      `;
+    }
+
+    function exportarDatos() {
+      alert("[SIMULACIÓN] Datos exportados a /jocop/exports/KATY_SECURED.enc");
+      log("[EXPORT] Datos ficticios empaquetados y cifrados (simulado).");
+    }
+
+    function reiniciarSistema() {
+      document.getElementById('terminal').textContent = 
+        "Reiniciando sistema...\n" +
+        "Limpiando caché...\n" +
+        "Iniciando lectura del dispositivo JOCOP KATY (Facebook)...\n" +
+        "Buscando señal en /dev/ttyJOCOP0...";
+      
+      setTimeout(iniciarSistema, 2000);
+    }
+  </script>
+</body>
+</html>
